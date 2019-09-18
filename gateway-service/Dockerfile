@@ -1,5 +1,5 @@
 FROM openjdk
-MAINTAINER Piotr Minkowski <piotr.minkowski@gmail.com>
+MAINTAINER Adil Mahmood <adil.mahmood@outlook.ie>
 ADD target/gateway-service.jar gateway-service.jar
 ENTRYPOINT ["java", "-jar", "/gateway-service.jar"]
 EXPOSE 8765
