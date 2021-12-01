@@ -3,11 +3,12 @@ kind: Service
 metadata:
  name: account-service
 spec:
- type: LoadBalancer
+ type: NodePort
  selector:
-  app: account
-  env: dev
+   app: account
+   env: dev
  ports:
- - protocol: TCP
+ - nodePort: 32410
+   protocol: TCP
    port: 2222
    targetPort: 2222
